@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#f2f2f4] m-10 mt-4">
+    <section>
+      <nav class="flex justify-between bg-white h-16 rounded-md shadow-sm">
+        <div class="flex items-center">
+          <img class="h-8 mt-4 ml-4" src="assets/logo.png" alt="" />
+          <h1 class="ml-4 mt-4">Dev<b>Board</b></h1>
+        </div>
+        <div>
+          <button id="back" class="h-8 mt-4 mr-8 w-36 rounded-md bg-blue-500">
+            <p class="text-white text-center font-semibold">Back to Desk</p>
+          </button>
+        </div>
+      </nav>
+      <script>
+        document.getElementById("back").addEventListener("click", function () {
+          window.history.back();
+        });
+      </script>
+    </section>
+    <section>
+      <h1 class="text-center font-bold mt-4 text-2xl">Blogs</h1>
+      <div class="bg-white h-36 rounded-md">
+        <h1 class="font-semibold text-lg ml-4 mt-8 pt-4 mr-4">Question-1: What are the different ways to select an element in the DOM?</h1><br>
+        <p class="ml-4"><b>The different way to select an element in the DOM,Those are:
+        </b></p>
+		<p class="ml-4">getElementById(),getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll().</p>
+      </div>
+      <div  class="bg-white h-36 rounded-md">
+        <h1  class="font-semibold text-lg ml-4 pt-4 mt-8 mr-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1><br>
+		<p class="ml-4"><b>the difference between innerHTML, innerText, and textContent is :</b></p>
+		<p class="ml-4 mr-4">textContents is all text contained by an element and all its children that are for formatting purposes only.
+			innerText returns all text contained by an element and all its child elements.
+			innerHtml returns all text, including html tags, that is contained by an element.</p>
+      </div>
+	  <div class="bg-white h-36 rounded-md">
+		<h1 class="font-semibold text-lg ml-4 pt-4 mt-8 mr-4">Question-3: What is event delegation in the DOM?</h1>
+		<br>
+		<p class="ml-4"><b>The Event  delegation in the DOM is :</b></p>
+		<p class="ml-4 mr-4">Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.</p>
+	  </div>
+	  <div class="bg-white h-36 rounded-md">
+		<h1 class="font-semibold text-lg ml-4 pt-4 mt-8 mr-4">Question-4: What is event bubbling in the DOM?</h1><br>
+		<p class="ml-4"><b>Event bubbling in the DOM :</b></p>
+		<p class="ml-4 mr-4">Event bubbling in the Document Object Model  is when an event is triggered on an element and then propagates up to its parent elements.</p>
+	  </div>
+    </section>
+	<div class="bg-white h-36 rounded-md">
+		<h1 class="font-semibold text-lg ml-4 pt-4 mt-8 mr-4 ">Question-5: How do you create, add, and remove elements using JavaScript?</h1><br>
+		<p class="ml-4"><b>We can create ,add,and remove element this way by using JavaScript: </b></p>
+		<p class="ml-4 mr-4"> createElement , appendChild , removeChild , and properties like innerHTML and textContent.</p>
+	</div>
+    <script src="index.js"></script>
+  </body>
+</html>
