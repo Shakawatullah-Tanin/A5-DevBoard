@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevBoard</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="ml-10 mr-10 mt-5 bg-[#F4F7FF]">
     <section>
@@ -34,12 +35,12 @@
     <section class="flex mt-4">
       <section class="bg-white rounded-sm pr-4">
         <div class="flex justify-between mt-4 px-4">
-          <div class="flex gap-6 items-center px-4  bg-[#F4F7FF]">
+          <div class="flex gap-6 items-center px-4 rounded-md  bg-[#F4F7FF]">
             <div>
               <img src="assets/checkbox.png" alt="">
             </div>
             <div>
-              <h1 class="text-sm text-[#00303C]">Task Assigned </h1>
+              <h1 class="text-sm  text-[#00303C]">Task Assigned </h1>
               <h1 class="font-bold text-xl">05</h1>
             </div>
           </div>
@@ -55,7 +56,7 @@
               </p>
             </button>
           </div>
-          <div class="bg-[#F4F7FF] text-center flex items-center">
+          <div class="bg-[#F4F7FF] text-center rounded-md flex items-center">
             <img class="flex items-center px-4 py-2" src="assets/calender.png" alt="">
             <span id="date" class="font-bold px-4"></span>
           </div>
@@ -72,7 +73,8 @@
                       <p class="text-xs text-[#676565]">Deadline<p class="text-sm font-semibold">21 March 2025</p></p>
                   </div>
                   <div>
-                      <button id="com-btn-1"  class="bg-[#3752FD] text-white text-sm p-2 rounded-sm mr-4">Completed</button>
+                      <button id="com-btn-1" class="bg-[#3752FD] text-white text-sm p-2 rounded-md mr-4">Completed</button>
+                      <span id="com-btn-1" class="font-semibold"></span>
                   </div>
               </div>
             </div>
@@ -87,7 +89,7 @@
                       <p class="text-xs text-[#676565]">Deadline<p class="text-sm font-semibold">22 March 2025</p></p>
                   </div>
                   <div>
-                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-sm mr-4">Completed</button>
+                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-md mr-4">Completed</button>
                   </div>
               </div>
             </div>
@@ -102,7 +104,7 @@
                       <p class="text-xs text-[#676565]">Deadline<p class="text-sm font-semibold">23 March 2025</p></p>
                   </div>
                   <div>
-                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-sm mr-4">Completed</button>
+                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-md mr-4">Completed</button>
                   </div>
               </div>
         </div>
@@ -117,7 +119,7 @@
                       <p class="text-xs text-[#676565]">Deadline<p class="text-sm font-semibold">24 March 2025</p></p>
                   </div>
                   <div>
-                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-sm mr-4">Completed</button>
+                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-md mr-4">Completed</button>
                   </div>
               </div>
         </div>
@@ -132,7 +134,7 @@
                       <p class="text-xs text-[#676565]">Deadline<p class="text-sm font-semibold">26 March 2025</p></p>
                   </div>
                   <div>
-                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-sm mr-4">Completed</button>
+                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-md mr-4">Completed</button>
                   </div>
               </div>
         </div>
@@ -147,7 +149,7 @@
                       <p class="text-xs text-[#676565]">Deadline<p class="text-sm font-semibold">27 March 2025</p></p>
                   </div>
                   <div>
-                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-sm mr-4">Completed</button>
+                      <button  class="bg-[#3752FD] text-white text-sm p-2 rounded-md mr-4">Completed</button>
                   </div>
               </div>
         </div>
@@ -159,7 +161,7 @@
             <img class="mt-4 pr-2" src="assets/activity.png" alt="">
             <h1 class="text-sm pt-4">Activity Log</h1>
           </div>
-          <button class="bg-[#3752FD] text-xs text-white px-3 py-2 rounded-sm mt-4">Clear History</button>
+          <button class="bg-[#3752FD] text-xs text-white px-3 py-2 rounded-md mt-4">Clear History</button>
         </div>
       </section>
     </section>
